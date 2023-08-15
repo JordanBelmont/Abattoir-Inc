@@ -64,3 +64,8 @@
       background-color: lighten(variables.color(primary), 20%);
    }
 }
+
+.service-btn {
+   @include mixins.flexPosition;
+   margin-bottom: 1.5rem;
+}
