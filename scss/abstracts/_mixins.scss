@@ -1,0 +1,21 @@
+@use "variables";
+
+@mixin navigation {
+   &-list {
+      display: flex;
+      gap: 2rem;
+      white-space: nowrap;
+      font-size: variables.size(xs) - 1.5rem;
+      color: variables.color(secondary);
+   }
+
+   &-link {
+      text-decoration: none;
+      color: variables.color(secondary);
+
+      &:hover {
+         color: lighten(variables.color(primary), 40%);
+         transition: opacity .3s;
+      }
+   }
+}
