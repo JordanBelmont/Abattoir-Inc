@@ -70,21 +70,21 @@
    // * DESKTOPS
    @media only screen and (min-width: 1025px) {
       gap: 1.5rem;
+   }
 
-      &-link {
-         text-decoration: none;
-         width: 4rem;
-         height: 4rem;
-         color: variables.color(secondary);
-         @include mixins.flexPosition;
+   &-link {
+      text-decoration: none;
+      width: 4rem;
+      height: 4rem;
+      color: variables.color(secondary);
+      @include mixins.flexPosition;
 
-         &:hover {
-            color: variables.color(septenary);
-         }
+      &:hover {
+         color: variables.color(septenary);
+      }
 
-         i {
-            font-size: variables.size(xl);
-         }
+      i {
+         font-size: variables.size(xl);
       }
    }
 }

@@ -831,21 +831,21 @@ header {
   .social-icons {
     gap: 1.5rem;
   }
-  .social-icons-link {
-    text-decoration: none;
-    width: 4rem;
-    height: 4rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .social-icons-link:hover {
-    color: #700202;
-  }
-  .social-icons-link i {
-    font-size: 3rem;
-  }
+}
+.social-icons-link {
+  text-decoration: none;
+  width: 4rem;
+  height: 4rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons-link:hover {
+  color: #700202;
+}
+.social-icons-link i {
+  font-size: 3rem;
 }
 
 .heading {
