@@ -657,4 +657,60 @@ header {
 .btn .arrow-line-3 {
   width: 1rem;
   transform: rotateZ(-45deg);
+}
+
+.quotes-container {
+  display: block;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 3rem;
+  color: #595959;
+  cursor: pointer;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.quotes-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.quotes-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #eee;
+}
+.quotes-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* On mouse-over, add a grey background color */
+.quotes-container:hover input ~ .checkmark,
+.quotes-container:hover label {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.quotes-container input:checked ~ .checkmark {
+  background-color: #700202;
+}
+
+/* Show the checkmark when checked */
+.quotes-container input:checked ~ .checkmark:after {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

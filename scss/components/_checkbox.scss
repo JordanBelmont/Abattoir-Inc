@@ -1,0 +1,64 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.quotes-container {
+   display: block;
+   position: relative;
+   margin-bottom: 1.5rem;
+   padding-left: 3rem;
+   color: lighten(variables.color(primary), 15%);
+   cursor: pointer;
+   font-size: variables.size(xs);
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+   }
+
+   .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: #eee;
+   }
+
+   .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+   }
+}
+
+/* On mouse-over, add a grey background color */
+.quotes-container:hover input~.checkmark,
+.quotes-container:hover label {
+   background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.quotes-container input:checked~.checkmark {
+   background-color: variables.color(septenary);
+}
+
+/* Show the checkmark when checked */
+.quotes-container input:checked~.checkmark:after {
+   display: block;
+}
