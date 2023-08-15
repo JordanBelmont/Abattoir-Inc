@@ -35,6 +35,7 @@
    visibility: hidden;
    opacity: 0;
    transition: opacity .3s;
+   @include mixins.navigation;
 
    &::before {
       content: '';

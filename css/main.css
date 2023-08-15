@@ -213,6 +213,21 @@ header {
   opacity: 0;
   transition: opacity 0.3s;
 }
+.dropdown-list {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+  font-size: -0.1rem;
+  color: #ffffff;
+}
+.dropdown-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.dropdown-link:hover {
+  color: #999999;
+  transition: opacity 0.3s;
+}
 .dropdown::before {
   content: "";
   display: block;
