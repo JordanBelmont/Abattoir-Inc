@@ -37,6 +37,13 @@
    transition: opacity .3s;
    @include mixins.navigation;
 
+   // * TABLETS
+   @media only screen and (min-width: 481px) {
+      top: 2.5rem;
+      right: -0.2rem;
+      width: 15rem;
+   }
+
    &::before {
       content: '';
       display: block;
@@ -46,6 +53,11 @@
       border-right: 15px solid transparent;
       border-bottom: 15px solid variables.color(primary);
       border-left: 15px solid transparent;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         left: 13.1rem;
+      }
    }
 
    &-item {
@@ -56,5 +68,10 @@
       font-weight: 300;
       font-size: variables.size(xs) - 0.5rem;
       color: variables.color(secondary);
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         font-size: variables.size(xs);
+      }
    }
 }

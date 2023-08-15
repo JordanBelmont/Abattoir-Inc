@@ -46,6 +46,11 @@
       visibility: hidden;
       transition: all .5s .2s;
       display: none;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         display: block;
+      }
    }
 
    h2 {

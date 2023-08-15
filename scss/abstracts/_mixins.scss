@@ -8,6 +8,11 @@
       font-size: variables.size(xs) - 1.5rem;
       color: variables.color(secondary);
 
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         font-size: variables.size(xs);
+      }
+
       // * LAPTOPS
       @media only screen and (min-width: 769px) {
          gap: 6rem;

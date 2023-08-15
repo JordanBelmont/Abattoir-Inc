@@ -9,6 +9,11 @@
    &-img {
       width: 90%;
 
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         width: 25rem;
+      }
+
       // * DESKTOPS
       @media only screen and (min-width: 1025px) {
          width: 50rem;
@@ -20,6 +25,12 @@
       font-size: variables.size(xs);
       letter-spacing: 0.2rem;
       margin: 1.2rem 0 1.2rem 0;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         letter-spacing: 0.5rem;
+         margin: 1.2rem 0 2rem 0;
+      }
 
       // * DESKTOPS
       @media only screen and (min-width: 1025px) {

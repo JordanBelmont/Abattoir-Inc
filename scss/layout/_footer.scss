@@ -7,6 +7,12 @@
    background-color: variables.color(primary);
    text-align: center;
 
+   // * TABLETS
+   @media only screen and (min-width: 481px) {
+      @include mixins.flexPosition(space-around);
+      flex-wrap: wrap;
+   }
+
    // * DESKTOPS
    @media only screen and (min-width: 1025px) {
       flex-wrap: nowrap;

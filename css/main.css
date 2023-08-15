@@ -158,6 +158,11 @@ header {
   font-size: -0.1rem;
   color: #ffffff;
 }
+@media only screen and (min-width: 481px) {
+  .nav-list {
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (min-width: 769px) {
   .nav-list {
     gap: 6rem;
@@ -200,7 +205,13 @@ header {
   -o-object-position: center center;
      object-position: center center;
 }
-.slideshow-slide-content {
+@media only screen and (min-width: 481px) {
+  .slideshow-slide img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.slideshow-content {
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 1rem;
@@ -208,8 +219,15 @@ header {
   max-width: 90%;
   padding: 3rem;
 }
+@media only screen and (min-width: 481px) {
+  .slideshow-content {
+    max-width: 50%;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
 @media only screen and (min-width: 769px) {
-  .slideshow-slide-content {
+  .slideshow-content {
     max-width: 25rem;
     padding: 2rem;
     bottom: 4rem;
@@ -217,27 +235,27 @@ header {
   }
 }
 @media only screen and (min-width: 1025px) {
-  .slideshow-slide-content {
+  .slideshow-content {
     max-width: 40rem;
     padding: 5rem;
     bottom: 6rem;
     left: 6rem;
   }
 }
-.slideshow-slide h2 {
+.slideshow h2 {
   font-size: 3rem;
   color: #333;
 }
 @media only screen and (min-width: 1025px) {
-  .slideshow-slide h2 {
+  .slideshow h2 {
     font-size: 4.2rem;
   }
 }
-.slideshow-slide p {
+.slideshow p {
   font-size: 1.4rem;
 }
 @media only screen and (min-width: 1025px) {
-  .slideshow-slide p {
+  .slideshow p {
     margin: 1rem 0;
     font-size: 1.8rem;
   }
@@ -409,6 +427,11 @@ header {
   transition: all 0.5s 0.2s;
   display: none;
 }
+@media only screen and (min-width: 481px) {
+  .service-content {
+    display: block;
+  }
+}
 .service h2 {
   font-size: 2rem;
 }
@@ -509,6 +532,11 @@ header {
   padding: 0 5rem;
   text-align: center;
 }
+@media only screen and (min-width: 481px) {
+  .quotes h2 {
+    padding: 0 10rem;
+  }
+}
 .quotes h2:before {
   content: "";
   display: block;
@@ -518,6 +546,13 @@ header {
   left: 1rem;
   top: 50%;
   position: absolute;
+}
+@media only screen and (min-width: 481px) {
+  .quotes h2:before {
+    width: 120px;
+    height: 2px;
+    left: 0;
+  }
 }
 .quotes h2:after {
   content: "";
@@ -529,6 +564,13 @@ header {
   top: 50%;
   position: absolute;
 }
+@media only screen and (min-width: 481px) {
+  .quotes h2:after {
+    width: 120px;
+    height: 2px;
+    right: 0;
+  }
+}
 .quotes h3 {
   font-size: 1.8rem;
   margin: 2rem;
@@ -537,6 +579,12 @@ header {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+@media only screen and (min-width: 481px) {
+  .quotes-services {
+    gap: 5rem;
+    margin: 3rem;
+  }
 }
 @media only screen and (min-width: 769px) {
   .quotes-services {
@@ -580,6 +628,11 @@ header {
 .quote .input-group-name {
   width: 50%;
 }
+@media only screen and (min-width: 481px) {
+  .quote .input-group-name {
+    width: 40%;
+  }
+}
 @media only screen and (min-width: 769px) {
   .quote .input-group-name {
     width: 50%;
@@ -588,6 +641,11 @@ header {
 .quote .input-group-email {
   width: 100%;
 }
+@media only screen and (min-width: 481px) {
+  .quote .input-group-email {
+    width: 80%;
+  }
+}
 @media only screen and (min-width: 769px) {
   .quote .input-group-email {
     width: 100%;
@@ -595,6 +653,11 @@ header {
 }
 .quote .input-group-text {
   width: 100%;
+}
+@media only screen and (min-width: 481px) {
+  .quote .input-group-text {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 769px) {
   .quote .input-group-text {
@@ -615,6 +678,11 @@ header {
   border-radius: 0.3rem;
   outline: none;
 }
+@media only screen and (min-width: 481px) {
+  .quote .input-group-btn {
+    width: 40%;
+  }
+}
 .quote .input-group-btn:hover {
   background-color: #0c0000;
   transition: background-color 0.8s;
@@ -625,6 +693,14 @@ header {
   border-top: 3.8rem solid #025E73;
   background-color: #333;
   text-align: center;
+}
+@media only screen and (min-width: 481px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .footer {
@@ -779,6 +855,11 @@ header {
 .heading-img {
   width: 90%;
 }
+@media only screen and (min-width: 481px) {
+  .heading-img {
+    width: 25rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .heading-img {
     width: 50rem;
@@ -789,6 +870,12 @@ header {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   margin: 1.2rem 0 1.2rem 0;
+}
+@media only screen and (min-width: 481px) {
+  .heading-sub {
+    letter-spacing: 0.5rem;
+    margin: 1.2rem 0 2rem 0;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .heading-sub {
@@ -835,6 +922,11 @@ header {
   font-size: -0.1rem;
   color: #ffffff;
 }
+@media only screen and (min-width: 481px) {
+  .dropdown-list {
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (min-width: 769px) {
   .dropdown-list {
     gap: 6rem;
@@ -853,6 +945,13 @@ header {
   color: #999999;
   transition: opacity 0.3s;
 }
+@media only screen and (min-width: 481px) {
+  .dropdown {
+    top: 2.5rem;
+    right: -0.2rem;
+    width: 15rem;
+  }
+}
 .dropdown::before {
   content: "";
   display: block;
@@ -863,6 +962,11 @@ header {
   border-bottom: 15px solid #333;
   border-left: 15px solid transparent;
 }
+@media only screen and (min-width: 481px) {
+  .dropdown::before {
+    left: 13.1rem;
+  }
+}
 .dropdown-item {
   margin: 0.5rem 0;
 }
@@ -870,6 +974,11 @@ header {
   font-weight: 300;
   font-size: 0.9rem;
   color: #ffffff;
+}
+@media only screen and (min-width: 481px) {
+  .dropdown-link {
+    font-size: 1.4rem;
+  }
 }
 
 .btn {

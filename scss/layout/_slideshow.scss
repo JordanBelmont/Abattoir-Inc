@@ -20,51 +20,64 @@
          height: inherit;
          object-fit: none;
          object-position: center center;
-      }
 
-      &-content {
-         background-color: rgba(variables.color(secondary), .9);
-         position: absolute;
-         bottom: 1rem;
-         left: 1rem;
-         max-width: 90%;
-         padding: 3rem;
-
-         // * LAPTOPS
-         @media only screen and (min-width: 769px) {
-            max-width: 25rem;
-            padding: 2rem;
-            bottom: 4rem;
-            left: 4rem;
-         }
-
-         // * DESKTOPS
-         @media only screen and (min-width: 1025px) {
-            max-width: 40rem;
-            padding: 5rem;
-            bottom: 6rem;
-            left: 6rem;
+         // * TABLETS
+         @media only screen and (min-width: 481px) {
+            object-fit: cover;
          }
       }
+   }
 
-      h2 {
-         font-size: variables.size(xl);
-         color: variables.color(primary);
+   &-content {
+      background-color: rgba(variables.color(secondary), .9);
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      max-width: 90%;
+      padding: 3rem;
 
-         // * DESKTOPS
-         @media only screen and (min-width: 1025px) {
-            font-size: variables.size(xl) + 1.2rem;
-         }
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         max-width: 50%;
+         bottom: 2rem;
+         left: 2rem;
       }
 
-      p {
-         font-size: variables.size(xs);
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         max-width: 25rem;
+         padding: 2rem;
+         bottom: 4rem;
+         left: 4rem;
+      }
 
-         // * DESKTOPS
-         @media only screen and (min-width: 1025px) {
-            margin: 1rem 0;
-            font-size: variables.size(sm);
-         }
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         max-width: 40rem;
+         padding: 5rem;
+         bottom: 6rem;
+         left: 6rem;
+      }
+   }
+
+
+   h2 {
+      font-size: variables.size(xl);
+      color: variables.color(primary);
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         font-size: variables.size(xl) + 1.2rem;
+      }
+   }
+
+   p {
+      font-size: variables.size(xs);
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         margin: 1rem 0;
+         font-size: variables.size(sm);
       }
    }
 }

@@ -13,6 +13,11 @@
       position: relative;
       padding: 0 5rem;
       text-align: center;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         padding: 0 10rem;
+      }
    }
 
    h2:before {
@@ -24,6 +29,13 @@
       left: 1rem;
       top: 50%;
       position: absolute;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         width: 120px;
+         height: 2px;
+         left: 0;
+      }
    }
 
    h2:after {
@@ -35,6 +47,13 @@
       right: 1rem;
       top: 50%;
       position: absolute;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         width: 120px;
+         height: 2px;
+         right: 0;
+      }
    }
 
    h3 {
@@ -46,6 +65,12 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
+
+      // * TABLETS
+      @media only screen and (min-width: 481px) {
+         gap: 5rem;
+         margin: 3rem;
+      }
 
       // * LAPTOPS
       @media only screen and (min-width: 769px) {
@@ -96,6 +121,11 @@
       &-name {
          width: 50%;
 
+         // * TABLETS
+         @media only screen and (min-width: 481px) {
+            width: 40%;
+         }
+
          // * LAPTOPS
          @media only screen and (min-width: 769px) {
             width: 50%;
@@ -105,6 +135,11 @@
       &-email {
          width: 100%;
 
+         // * TABLETS
+         @media only screen and (min-width: 481px) {
+            width: 80%;
+         }
+
          // * LAPTOPS
          @media only screen and (min-width: 769px) {
             width: 100%;
@@ -113,6 +148,11 @@
 
       &-text {
          width: 100%;
+
+         // * TABLETS
+         @media only screen and (min-width: 481px) {
+            width: 80%;
+         }
 
          // * LAPTOPS
          @media only screen and (min-width: 769px) {
@@ -133,6 +173,11 @@
          border: .2rem solid darken(variables.color(septenary), 10%);
          border-radius: .3rem;
          outline: none;
+
+         // * TABLETS
+         @media only screen and (min-width: 481px) {
+            width: 40%;
+         }
 
          &:hover {
             background-color: darken(variables.color(septenary), 20%);
