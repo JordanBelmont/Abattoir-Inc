@@ -1,0 +1,51 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.footer {
+   padding: 3rem;
+   border-top: 3.8rem solid variables.color(quaternary);
+   background-color: variables.color(primary);
+   text-align: center;
+}
+
+.social-wrapper {
+   align-items: center;
+   text-align: center;
+
+   img {
+      width: 80%;
+      margin: 2rem;
+   }
+
+   &-1 {
+      display: none;
+   }
+
+   &-2 {
+      display: block;
+   }
+}
+
+.social-icons {
+   display: flex;
+   justify-content: center;
+   gap: 0rem;
+   margin: 1rem;
+   box-sizing: border-box;
+
+   &-link {
+      text-decoration: none;
+      width: 4rem;
+      height: 4rem;
+      color: variables.color(secondary);
+      @include mixins.flexPosition;
+
+      &:hover {
+         color: variables.color(septenary);
+      }
+
+      i {
+         font-size: variables.size(xl);
+      }
+   }
+}
