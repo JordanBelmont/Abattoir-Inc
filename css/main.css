@@ -143,4 +143,18 @@ table {
 header {
   z-index: 1;
   background-color: #333;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 2rem;
+}
+.heading-img {
+  width: 90%;
+}
+.heading-sub {
+  color: #ffffff;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  margin: 1.2rem 0 1.2rem 0;
 }/*# sourceMappingURL=main.css.map */
