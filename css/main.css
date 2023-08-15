@@ -297,6 +297,70 @@ header {
   width: 100%;
 }
 
+.services {
+  color: #ffffff;
+  margin: 2rem;
+}
+.services-heading {
+  padding: 1rem;
+  background-color: #025E73;
+}
+.services-heading-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.services-wrapper {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.service {
+  position: relative;
+  text-align: center;
+}
+.service:hover .service-content {
+  opacity: 1;
+  visibility: visible;
+}
+.service:hover .service-img {
+  opacity: 0.5;
+}
+.service-img {
+  width: 100%;
+  transition: all 0.5s 0.2s;
+}
+.service-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border: 0.1rem solid #333;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s 0.2s;
+  display: none;
+}
+.service h2 {
+  font-size: 2rem;
+}
+.service a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+  border: 0.1rem solid #1a1a1a;
+  background-color: #666666;
+}
+
 .heading {
   text-align: center;
   padding-top: 2rem;
