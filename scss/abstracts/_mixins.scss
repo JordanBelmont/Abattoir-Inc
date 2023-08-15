@@ -38,3 +38,29 @@
    justify-content: $justCont;
    align-items: $alignItem;
 }
+
+@mixin footerList {
+   &-heading {
+      font-size: variables.size(xs);
+      color: variables.color(secondary);
+      text-decoration: none;
+      white-space: nowrap;
+   }
+
+   &-item {
+      font-size: variables.size(xs) - 1.5rem;
+      margin: 2rem 0;
+      color: darken(variables.color(secondary), 15%);
+   }
+
+   &-link {
+      font-size: variables.size(xs) - 1.5rem;
+      text-decoration: none;
+      color: darken(variables.color(secondary), 15%);
+      transition: color .2s;
+
+      &:hover {
+         color: darken(variables.color(secondary), 40%);
+      }
+   }
+}

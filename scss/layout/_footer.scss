@@ -8,6 +8,14 @@
    text-align: center;
 }
 
+.footer-nav {
+   @include mixins.footerList;
+}
+
+.contact-list {
+   @include mixins.footerList;
+}
+
 .social-wrapper {
    align-items: center;
    text-align: center;
