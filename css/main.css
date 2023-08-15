@@ -179,4 +179,55 @@ header {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   margin: 1.2rem 0 1.2rem 0;
+}
+
+.dropdown-li {
+  position: relative;
+  z-index: 3;
+  white-space: nowrap;
+}
+.dropdown-li::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: bold;
+}
+.dropdown-li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown-li:hover::after {
+  color: #999999;
+  transition: opacity 0.3s;
+}
+
+.dropdown {
+  position: absolute;
+  top: 2.1rem;
+  right: -0.4rem;
+  width: 10rem;
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.dropdown::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.9rem;
+  left: 8.1rem;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  border-left: 15px solid transparent;
+}
+.dropdown-item {
+  margin: 0.5rem 0;
+}
+.dropdown-link {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.dropdown-li {
+   position: relative;
+   z-index: 3;
+   white-space: nowrap;
+
+   &::after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f078';
+      font-weight: bold;
+   }
+
+   &:hover .dropdown {
+      visibility: visible;
+      opacity: 1;
+   }
+
+   &:hover::after {
+      color: lighten(variables.color(primary), 40%);
+      transition: opacity .3s;
+   }
+}
+
+.dropdown {
+   position: absolute;
+   top: 2.1rem;
+   right: -0.4rem;
+   width: 10rem;
+   background-color: variables.color(primary);
+   padding: 1rem;
+   text-align: center;
+   border-radius: 0.2rem;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity .3s;
+
+   &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -0.9rem;
+      left: 8.1rem;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid variables.color(primary);
+      border-left: 15px solid transparent;
+   }
+
+   &-item {
+      margin: 0.5rem 0;
+   }
+
+   &-link {
+      font-weight: 300;
+      font-size: variables.size(xs) - 0.5rem;
+      color: variables.color(secondary);
+   }
+}
