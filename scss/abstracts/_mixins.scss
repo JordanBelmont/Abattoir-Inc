@@ -8,6 +8,11 @@
       font-size: variables.size(xs) - 1.5rem;
       color: variables.color(secondary);
 
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         gap: 6rem;
+      }
+
       // * DESKTOPS
       @media only screen and (min-width: 1025px) {
          gap: 8rem;
@@ -51,6 +56,11 @@
       text-decoration: none;
       white-space: nowrap;
 
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         font-size: variables.size(sm);
+      }
+
       // * DESKTOPS
       @media only screen and (min-width: 1025px) {
          font-size: variables.size(md);
@@ -61,6 +71,11 @@
       font-size: variables.size(xs) - 1.5rem;
       margin: 2rem 0;
       color: darken(variables.color(secondary), 15%);
+
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         font-size: variables.size(xs);
+      }
    }
 
    &-link {
@@ -68,6 +83,11 @@
       text-decoration: none;
       color: darken(variables.color(secondary), 15%);
       transition: color .2s;
+
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         font-size: variables.size(xs);
+      }
 
       &:hover {
          color: darken(variables.color(secondary), 40%);

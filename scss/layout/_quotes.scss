@@ -47,6 +47,11 @@
       justify-content: center;
       gap: 2rem;
 
+      // * LAPTOPS
+      @media only screen and (min-width: 769px) {
+         gap: 8rem;
+      }
+
       // * DESKTOPS
       @media only screen and (min-width: 1025px) {
          gap: 10rem;
@@ -90,14 +95,29 @@
 
       &-name {
          width: 50%;
+
+         // * LAPTOPS
+         @media only screen and (min-width: 769px) {
+            width: 50%;
+         }
       }
 
       &-email {
          width: 100%;
+
+         // * LAPTOPS
+         @media only screen and (min-width: 769px) {
+            width: 100%;
+         }
       }
 
       &-text {
          width: 100%;
+
+         // * LAPTOPS
+         @media only screen and (min-width: 769px) {
+            width: 100%;
+         }
       }
 
       &-btn {

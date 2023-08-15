@@ -23,6 +23,14 @@
       color: darken(variables.color(secondary), 15%);
       line-height: 2rem;
 
+      // * LAPTOPS
+      @media only screen and (min-width: 1025px) {
+         padding: 2rem;
+         display: flex;
+         flex-direction: column;
+         gap: 5rem;
+      }
+
       &-content {
          h2 {
             color: variables.color(secondary);
@@ -40,13 +48,28 @@
       border-radius: 0 30rem 30rem 0;
       margin: 3rem 0;
 
+      // * LAPTOPS
+      @media only screen and (min-width: 1025px) {
+         margin: 0;
+      }
+
       &-1 {
          display: none;
+
+         // * LAPTOPS
+         @media only screen and (min-width: 1025px) {
+            display: block;
+         }
       }
 
       &-2 {
          display: block;
          width: 100%;
+
+         // * LAPTOPS
+         @media only screen and (min-width: 1025px) {
+            display: none;
+         }
       }
    }
 }

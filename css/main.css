@@ -158,6 +158,11 @@ header {
   font-size: -0.1rem;
   color: #ffffff;
 }
+@media only screen and (min-width: 769px) {
+  .nav-list {
+    gap: 6rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .nav-list {
     gap: 8rem;
@@ -202,6 +207,14 @@ header {
   left: 1rem;
   max-width: 90%;
   padding: 3rem;
+}
+@media only screen and (min-width: 769px) {
+  .slideshow-slide-content {
+    max-width: 25rem;
+    padding: 2rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .slideshow-slide-content {
@@ -301,6 +314,14 @@ header {
   color: #d9d9d9;
   line-height: 2rem;
 }
+@media only screen and (min-width: 1025px) {
+  .about-right {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
 .about-right-content h2 {
   color: #ffffff;
   font-size: 2rem;
@@ -313,12 +334,27 @@ header {
   border-radius: 0 30rem 30rem 0;
   margin: 3rem 0;
 }
+@media only screen and (min-width: 1025px) {
+  .about-img {
+    margin: 0;
+  }
+}
 .about-img-1 {
   display: none;
+}
+@media only screen and (min-width: 1025px) {
+  .about-img-1 {
+    display: block;
+  }
 }
 .about-img-2 {
   display: block;
   width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  .about-img-2 {
+    display: none;
+  }
 }
 
 .services {
@@ -502,6 +538,11 @@ header {
   justify-content: center;
   gap: 2rem;
 }
+@media only screen and (min-width: 769px) {
+  .quotes-services {
+    gap: 8rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .quotes-services {
     gap: 10rem;
@@ -539,11 +580,26 @@ header {
 .quote .input-group-name {
   width: 50%;
 }
+@media only screen and (min-width: 769px) {
+  .quote .input-group-name {
+    width: 50%;
+  }
+}
 .quote .input-group-email {
   width: 100%;
 }
+@media only screen and (min-width: 769px) {
+  .quote .input-group-email {
+    width: 100%;
+  }
+}
 .quote .input-group-text {
   width: 100%;
+}
+@media only screen and (min-width: 769px) {
+  .quote .input-group-text {
+    width: 100%;
+  }
 }
 .quote .input-group-btn {
   width: 75%;
@@ -582,6 +638,11 @@ header {
   text-decoration: none;
   white-space: nowrap;
 }
+@media only screen and (min-width: 769px) {
+  .footer-nav-heading {
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .footer-nav-heading {
     font-size: 2rem;
@@ -592,11 +653,21 @@ header {
   margin: 2rem 0;
   color: #d9d9d9;
 }
+@media only screen and (min-width: 769px) {
+  .footer-nav-item {
+    font-size: 1.4rem;
+  }
+}
 .footer-nav-link {
   font-size: -0.1rem;
   text-decoration: none;
   color: #d9d9d9;
   transition: color 0.2s;
+}
+@media only screen and (min-width: 769px) {
+  .footer-nav-link {
+    font-size: 1.4rem;
+  }
 }
 .footer-nav-link:hover {
   color: #999999;
@@ -608,6 +679,11 @@ header {
   text-decoration: none;
   white-space: nowrap;
 }
+@media only screen and (min-width: 769px) {
+  .contact-list-heading {
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .contact-list-heading {
     font-size: 2rem;
@@ -618,11 +694,21 @@ header {
   margin: 2rem 0;
   color: #d9d9d9;
 }
+@media only screen and (min-width: 769px) {
+  .contact-list-item {
+    font-size: 1.4rem;
+  }
+}
 .contact-list-link {
   font-size: -0.1rem;
   text-decoration: none;
   color: #d9d9d9;
   transition: color 0.2s;
+}
+@media only screen and (min-width: 769px) {
+  .contact-list-link {
+    font-size: 1.4rem;
+  }
 }
 .contact-list-link:hover {
   color: #999999;
@@ -748,6 +834,11 @@ header {
   white-space: nowrap;
   font-size: -0.1rem;
   color: #ffffff;
+}
+@media only screen and (min-width: 769px) {
+  .dropdown-list {
+    gap: 6rem;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .dropdown-list {
