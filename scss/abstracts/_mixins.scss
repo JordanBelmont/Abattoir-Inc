@@ -19,3 +19,16 @@
       }
    }
 }
+
+@mixin headerBar {
+   &-heading {
+      padding: 1rem;
+      background-color: variables.color(quaternary);
+
+      &-title {
+         text-align: center;
+         font-size: variables.size(sm);
+         color: variables.color(secondary);
+      }
+   }
+}

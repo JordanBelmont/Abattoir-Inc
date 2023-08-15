@@ -6,6 +6,7 @@
    color: variables.color(secondary);
    position: relative;
    text-align: center;
+   @include mixins.headerBar;
 
    &-wrapper {
       display: flex;

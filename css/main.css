@@ -254,6 +254,15 @@ header {
   position: relative;
   text-align: center;
 }
+.about-heading {
+  padding: 1rem;
+  background-color: #025E73;
+}
+.about-heading-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
 .about-wrapper {
   display: flex;
   align-items: center;
