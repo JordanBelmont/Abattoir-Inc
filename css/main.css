@@ -145,6 +145,28 @@ header {
   background-color: #333;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #025E73;
+}
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+  font-size: -0.1rem;
+  color: #ffffff;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-link:hover {
+  color: #999999;
+  transition: opacity 0.3s;
+}
+
 .heading {
   text-align: center;
   padding-top: 2rem;
