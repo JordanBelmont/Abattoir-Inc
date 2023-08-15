@@ -7,6 +7,7 @@
    @include mixins.headerBar;
 
    &-wrapper {
+      @include mixins.flexPosition(space-evenly);
       margin-bottom: 1.5rem;
       color: variables.color(secondary);
    }
