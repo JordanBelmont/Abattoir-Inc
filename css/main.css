@@ -371,6 +371,151 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.reviews {
+  background-color: #333;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+.reviews-heading {
+  padding: 1rem;
+  background-color: #025E73;
+}
+.reviews-heading-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.reviews-wrapper {
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.review {
+  line-height: 2rem;
+  margin: 2rem;
+}
+.review-1 {
+  display: none;
+}
+.review-text {
+  font-size: 1.4rem;
+  margin: 1rem;
+  color: #d9d9d9;
+}
+.review i {
+  font-size: 4.5rem;
+}
+
+.quotes {
+  color: #333;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.quotes-heading {
+  padding: 1rem;
+  background-color: #025E73;
+}
+.quotes-heading-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.quotes h2 {
+  font-size: 2rem;
+  position: relative;
+  padding: 0 5rem;
+  text-align: center;
+}
+.quotes h2:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #000;
+  left: 1rem;
+  top: 50%;
+  position: absolute;
+}
+.quotes h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #000;
+  right: 1rem;
+  top: 50%;
+  position: absolute;
+}
+.quotes h3 {
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+.quotes-services {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.quote-heading {
+  text-align: center;
+  padding: 1rem;
+  margin: 0 3rem 3rem 3rem;
+}
+.quote .input-group {
+  display: flex;
+  justify-content: center;
+}
+.quote .input-group-text, .quote .input-group-name, .quote .input-group-email {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  border: 0.2rem solid #1a1a1a;
+  border-radius: 0.3rem;
+  outline: none;
+  font-family: arial;
+  background-color: #eee;
+}
+.quote .input-group-text:focus, .quote .input-group-name:focus, .quote .input-group-email:focus {
+  border: 0.2rem solid #700202;
+  transition: border 0.8s;
+}
+.quote .input-group-text:focus::-webkit-input-placeholder, .quote .input-group-name:focus::-webkit-input-placeholder, .quote .input-group-email:focus::-webkit-input-placeholder {
+  color: #700202;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
+}
+.quote .input-group-name {
+  width: 50%;
+}
+.quote .input-group-email {
+  width: 100%;
+}
+.quote .input-group-text {
+  width: 100%;
+}
+.quote .input-group-btn {
+  width: 75%;
+  color: #ffffff;
+  background-color: #700202;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  margin: 1rem 0.5rem 0rem;
+  border: 0.2rem solid #3e0101;
+  border-radius: 0.3rem;
+  outline: none;
+}
+.quote .input-group-btn:hover {
+  background-color: #0c0000;
+  transition: background-color 0.8s;
+}
+
 .heading {
   text-align: center;
   padding-top: 2rem;

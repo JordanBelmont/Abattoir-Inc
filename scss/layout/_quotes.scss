@@ -1,0 +1,118 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.quotes {
+   color: variables.color(primary);
+   padding: 5rem;
+   @include mixins.headerBar;
+   @include mixins.flexPosition(space-evenly);
+   flex-direction: column;
+
+   h2 {
+      font-size: variables.size(md);
+      position: relative;
+      padding: 0 5rem;
+      text-align: center;
+   }
+
+   h2:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #000;
+      left: 1rem;
+      top: 50%;
+      position: absolute;
+   }
+
+   h2:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #000;
+      right: 1rem;
+      top: 50%;
+      position: absolute;
+   }
+
+   h3 {
+      font-size: variables.size(sm);
+      margin: 2rem;
+   }
+
+   &-services {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+   }
+}
+
+.quote {
+   &-heading {
+      text-align: center;
+      padding: 1rem;
+      margin: 0 3rem 3rem 3rem;
+   }
+
+   .input-group {
+      display: flex;
+      justify-content: center;
+
+      &-text,
+      &-name,
+      &-email {
+         padding: 1rem;
+         font-size: variables.size(xs) - 0.2rem;
+         margin: 1rem .5rem;
+         border: .2rem solid darken(variables.color(primary), 10%);
+         border-radius: .3rem;
+         outline: none;
+         font-family: arial;
+         background-color: #eee;
+
+         &:focus {
+            border: .2rem solid variables.color(septenary);
+            transition: border .8s;
+         }
+
+         &:focus::-webkit-input-placeholder {
+            color: variables.color(septenary);
+            transition: color .8s;
+         }
+      }
+
+      &-name {
+         width: 50%;
+      }
+
+      &-email {
+         width: 100%;
+      }
+
+      &-text {
+         width: 100%;
+      }
+
+      &-btn {
+         width: 75%;
+         color: variables.color(secondary);
+         background-color: variables.color(septenary);
+         cursor: pointer;
+         padding: 1rem;
+         font-size: variables.size(xs);
+         font-family: 'Josefin Sans';
+         text-transform: uppercase;
+         margin: 1rem .5rem 0rem;
+         border: .2rem solid darken(variables.color(septenary), 10%);
+         border-radius: .3rem;
+         outline: none;
+
+         &:hover {
+            background-color: darken(variables.color(septenary), 20%);
+            transition: background-color .8s;
+         }
+      }
+   }
+}
