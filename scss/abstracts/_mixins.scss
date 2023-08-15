@@ -7,6 +7,11 @@
       white-space: nowrap;
       font-size: variables.size(xs) - 1.5rem;
       color: variables.color(secondary);
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         gap: 8rem;
+      }
    }
 
    &-link {
@@ -45,6 +50,11 @@
       color: variables.color(secondary);
       text-decoration: none;
       white-space: nowrap;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         font-size: variables.size(md);
+      }
    }
 
    &-item {

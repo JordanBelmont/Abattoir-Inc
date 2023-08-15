@@ -158,6 +158,11 @@ header {
   font-size: -0.1rem;
   color: #ffffff;
 }
+@media only screen and (min-width: 1025px) {
+  .nav-list {
+    gap: 8rem;
+  }
+}
 .nav-link {
   text-decoration: none;
   color: #ffffff;
@@ -198,12 +203,31 @@ header {
   max-width: 90%;
   padding: 3rem;
 }
+@media only screen and (min-width: 1025px) {
+  .slideshow-slide-content {
+    max-width: 40rem;
+    padding: 5rem;
+    bottom: 6rem;
+    left: 6rem;
+  }
+}
 .slideshow-slide h2 {
   font-size: 3rem;
   color: #333;
 }
+@media only screen and (min-width: 1025px) {
+  .slideshow-slide h2 {
+    font-size: 4.2rem;
+  }
+}
 .slideshow-slide p {
   font-size: 1.4rem;
+}
+@media only screen and (min-width: 1025px) {
+  .slideshow-slide p {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+  }
 }
 
 .slideshow-slide:nth-child(1) {
@@ -390,13 +414,32 @@ header {
   gap: 2rem;
   padding: 1rem;
 }
+@media only screen and (min-width: 1025px) {
+  .reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 5rem;
+  }
+}
 
 .review {
   line-height: 2rem;
   margin: 2rem;
 }
+@media only screen and (min-width: 1025px) {
+  .review {
+    margin: 0rem;
+  }
+}
 .review-1 {
   display: none;
+}
+@media only screen and (min-width: 1025px) {
+  .review-1 {
+    display: block;
+  }
 }
 .review-text {
   font-size: 1.4rem;
@@ -458,6 +501,11 @@ header {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+@media only screen and (min-width: 1025px) {
+  .quotes-services {
+    gap: 10rem;
+  }
 }
 
 .quote-heading {
@@ -522,12 +570,22 @@ header {
   background-color: #333;
   text-align: center;
 }
+@media only screen and (min-width: 1025px) {
+  .footer {
+    flex-wrap: nowrap;
+  }
+}
 
 .footer-nav-heading {
   font-size: 1.4rem;
   color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
+}
+@media only screen and (min-width: 1025px) {
+  .footer-nav-heading {
+    font-size: 2rem;
+  }
 }
 .footer-nav-item {
   font-size: -0.1rem;
@@ -549,6 +607,11 @@ header {
   color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
+}
+@media only screen and (min-width: 1025px) {
+  .contact-list-heading {
+    font-size: 2rem;
+  }
 }
 .contact-list-item {
   font-size: -0.1rem;
@@ -573,11 +636,26 @@ header {
   width: 80%;
   margin: 2rem;
 }
+@media only screen and (min-width: 1025px) {
+  .social-wrapper img {
+    width: 60%;
+  }
+}
 .social-wrapper-1 {
   display: none;
 }
+@media only screen and (min-width: 1025px) {
+  .social-wrapper-1 {
+    display: block;
+  }
+}
 .social-wrapper-2 {
   display: block;
+}
+@media only screen and (min-width: 1025px) {
+  .social-wrapper-2 {
+    display: none;
+  }
 }
 
 .social-icons {
@@ -587,20 +665,25 @@ header {
   margin: 1rem;
   box-sizing: border-box;
 }
-.social-icons-link {
-  text-decoration: none;
-  width: 4rem;
-  height: 4rem;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-icons-link:hover {
-  color: #700202;
-}
-.social-icons-link i {
-  font-size: 3rem;
+@media only screen and (min-width: 1025px) {
+  .social-icons {
+    gap: 1.5rem;
+  }
+  .social-icons-link {
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-icons-link:hover {
+    color: #700202;
+  }
+  .social-icons-link i {
+    font-size: 3rem;
+  }
 }
 
 .heading {
@@ -610,11 +693,21 @@ header {
 .heading-img {
   width: 90%;
 }
+@media only screen and (min-width: 1025px) {
+  .heading-img {
+    width: 50rem;
+  }
+}
 .heading-sub {
   color: #ffffff;
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   margin: 1.2rem 0 1.2rem 0;
+}
+@media only screen and (min-width: 1025px) {
+  .heading-sub {
+    font-size: 1.8rem;
+  }
 }
 
 .dropdown-li {
@@ -655,6 +748,11 @@ header {
   white-space: nowrap;
   font-size: -0.1rem;
   color: #ffffff;
+}
+@media only screen and (min-width: 1025px) {
+  .dropdown-list {
+    gap: 8rem;
+  }
 }
 .dropdown-link {
   text-decoration: none;

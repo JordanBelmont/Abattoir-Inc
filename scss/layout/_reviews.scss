@@ -11,6 +11,13 @@
    &-wrapper {
       gap: 2rem;
       padding: 1rem;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         @include mixins.flexPosition();
+         gap: 10rem;
+         padding: 5rem;
+      }
    }
 }
 
@@ -18,8 +25,18 @@
    line-height: 2rem;
    margin: 2rem;
 
+   // * DESKTOPS
+   @media only screen and (min-width: 1025px) {
+      margin: 0rem;
+   }
+
    &-1 {
       display: none;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         display: block;
+      }
    }
 
    &-text {

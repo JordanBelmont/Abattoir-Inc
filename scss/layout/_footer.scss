@@ -6,6 +6,11 @@
    border-top: 3.8rem solid variables.color(quaternary);
    background-color: variables.color(primary);
    text-align: center;
+
+   // * DESKTOPS
+   @media only screen and (min-width: 1025px) {
+      flex-wrap: nowrap;
+   }
 }
 
 .footer-nav {
@@ -23,14 +28,29 @@
    img {
       width: 80%;
       margin: 2rem;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         width: 60%;
+      }
    }
 
    &-1 {
       display: none;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         display: block;
+      }
    }
 
    &-2 {
       display: block;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         display: none;
+      }
    }
 }
 
@@ -41,19 +61,24 @@
    margin: 1rem;
    box-sizing: border-box;
 
-   &-link {
-      text-decoration: none;
-      width: 4rem;
-      height: 4rem;
-      color: variables.color(secondary);
-      @include mixins.flexPosition;
+   // * DESKTOPS
+   @media only screen and (min-width: 1025px) {
+      gap: 1.5rem;
 
-      &:hover {
-         color: variables.color(septenary);
-      }
+      &-link {
+         text-decoration: none;
+         width: 4rem;
+         height: 4rem;
+         color: variables.color(secondary);
+         @include mixins.flexPosition;
 
-      i {
-         font-size: variables.size(xl);
+         &:hover {
+            color: variables.color(septenary);
+         }
+
+         i {
+            font-size: variables.size(xl);
+         }
       }
    }
 }

@@ -46,6 +46,11 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
+
+      // * DESKTOPS
+      @media only screen and (min-width: 1025px) {
+         gap: 10rem;
+      }
    }
 }
 
