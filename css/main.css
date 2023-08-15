@@ -248,6 +248,46 @@ header {
     opacity: 0;
   }
 }
+.about {
+  background-color: #333;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+}
+.about-right {
+  width: 50% auto;
+  padding: 2rem 0;
+  align-items: center;
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #d9d9d9;
+  line-height: 2rem;
+}
+.about-right-content h2 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.about-right-content p {
+  margin: 1rem;
+}
+.about-img {
+  width: 50%;
+  border-radius: 0 30rem 30rem 0;
+  margin: 3rem 0;
+}
+.about-img-1 {
+  display: none;
+}
+.about-img-2 {
+  display: block;
+  width: 100%;
+}
+
 .heading {
   text-align: center;
   padding-top: 2rem;
