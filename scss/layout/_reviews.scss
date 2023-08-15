@@ -1,0 +1,34 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.reviews {
+   background-color: variables.color(primary);
+   color: variables.color(secondary);
+   position: relative;
+   text-align: center;
+   @include mixins.headerBar;
+
+   &-wrapper {
+      gap: 2rem;
+      padding: 1rem;
+   }
+}
+
+.review {
+   line-height: 2rem;
+   margin: 2rem;
+
+   &-1 {
+      display: none;
+   }
+
+   &-text {
+      font-size: variables.size(xs);
+      margin: 1rem;
+      color: darken(variables.color(secondary), 15%);
+   }
+
+   i {
+      font-size: variables.size(xl) * 1.5;
+   }
+}
