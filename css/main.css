@@ -138,4 +138,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+header {
+  z-index: 1;
+  background-color: #333;
 }/*# sourceMappingURL=main.css.map */

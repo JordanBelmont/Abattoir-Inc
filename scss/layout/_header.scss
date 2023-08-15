@@ -1,0 +1,6 @@
+@use "../abstracts/variables";
+
+header {
+   z-index: 1;
+   background-color: variables.color(primary);
+}
